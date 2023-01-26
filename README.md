@@ -4,24 +4,11 @@
 > Also, I use this repo to take notes and store documents about a Google Data Analysis course that I'm taking.
 
 
-<style> 
-    #p-link{
-        text-align: center;
-        font-size: 20px;
-        font-weight: bold; 
-        margin-top: 30px;
-        margin-bottom: 50px;
-    }
 
-    #link{
-        color: #00FF17;
-    }
-</style> 
-
-
-<p id="p-link" width="100%" > 
+<p id="p-link" width="100%" style="text-align: center;  font-size: 20px;font-weight: bold;         margin-top: 30px;
+        margin-bottom: 50px;"> 
     <a 
-        id="link"
+        style="    color: #00FF17;"
         href="https://leo-zubiri.github.io/Data-Analytics-Google/"
     > 
     🚀 Visit Data Analytics Documentation 🚀
