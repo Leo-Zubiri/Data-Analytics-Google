@@ -1,7 +1,32 @@
 
 > This repository was created to learn how to generate dinamic documentation with **docsify**. I only used some features I consider it useful to have a good documentation
 >
-> Also, I use this repo to take notes and store documents about a Google Data Analysis course that I'm takin.
+> Also, I use this repo to take notes and store documents about a Google Data Analysis course that I'm taking.
+
+
+<style> 
+    #p-link{
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold; 
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    #link{
+        color: #00FF17;
+    }
+</style> 
+
+
+<p id="p-link" width="100%" > 
+    <a 
+        id="link"
+        href="https://leo-zubiri.github.io/Data-Analytics-Google/"
+    > 
+    🚀 Visit Data Analytics Documentation 🚀
+    </a>
+</p>
 
 # Docsify
 
