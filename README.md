@@ -1,11 +1,11 @@
 
-> This repository was created to learn how to generate dinamic documentation with **docsify**. I only used some features I consider it useful to have a good documentation
+> This repository was created to learn how to generate dynamic documentation with **docsify**. I only used some features I consider it useful to have a good documentation
 >
 > Also, I use this repo to take notes and store documents about a Google Data Analysis course that I'm taking.
 
 
 
-<p id="p-link" width="100%" style="text-align: center;  font-size: 20px;font-weight: bold;         margin-top: 30px;
+<p width="100%" style="text-align: center;  font-size: 20px;font-weight: bold;         margin-top: 30px;
         margin-bottom: 50px;"> 
     <a 
         style="    color: #00FF17;"
@@ -176,4 +176,46 @@ blah blah blah
 ```pdf
 	path-to-the-pdf-file
 \```
+```
+
+## Navbar
+
+```html
+<!-- index.html -->
+
+<body>
+  <nav>
+    <a href="#/">EN</a>
+    <a href="#/zh-cn/">简体中文</a>
+  </nav>
+  <div id="app"></div>
+</body>
+
+
+
+<!-- index.html -->
+
+<script>
+  window.$docsify = {
+    loadNavbar: true
+  }
+</script>
+```
+
+```md
+<!-- _navbar.md -->
+
+* Getting started
+
+  * [Quick start](quickstart.md)
+  * [Writing more pages](more-pages.md)
+  * [Custom navbar](custom-navbar.md)
+  * [Cover page](cover.md)
+
+* Configuration
+  * [Configuration](configuration.md)
+  * [Themes](themes.md)
+  * [Using plugins](plugins.md)
+  * [Markdown configuration](markdown.md)
+  * [Language highlight](language-highlight.md)
 ```
