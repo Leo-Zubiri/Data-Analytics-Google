@@ -35,16 +35,143 @@ The process of changing data to make it more organized and easier to read.
 
 ---
 
-## Types of insufficient data
+## Insufficient Data
+
+### Types of insufficient data
 
 - Data from only one source
 - Data that keeps updating
 - Outdated data
 - Geographically-limited data
 
-## Ways to address insufficient data
+### Ways to address insufficient data
 
 - Identify trends with the available data
 - Wait for more data if time allows
 - Talk with stakeholders and adjust your objective
 - Look for a new dataset
+
+---
+
+## Sample
+
+Un subconjunto de tu población. Al igual que una muestra de comida, se la llama muestra porque es solo una porción.
+
+### Population
+
+All possible data values in a certain dataset
+
+### Sample Bias
+
+A sample isn't representative of the population as a whole
+
+### Random Sampling
+
+A way of selecting a sample from a population so that every possible type of the sample has an equal chance of being chosen
+
+### Términos
+
+    Población 	
+    El grupo completo que te interesa para tu estudio. Por ejemplo, si estás haciendo una encuesta a las personas de tu empresa, la población serían todos los empleados de tu empresa.
+
+    Muestra 
+    Un subconjunto de tu población. Al igual que una muestra de comida, se la llama muestra porque es solo una porción. Por lo tanto, si tu empresa es demasiado grande como para poder consultar a todas las personas, puedes consultar a una muestra representativa de tu población.
+
+    Margen de error
+        
+    Dado que se utiliza una muestra para representar a la población, los resultados de la muestra deberían ser diferentes a los resultados que se hubieran obtenido si hubieras consultado a toda la población. Esta diferencia se llama margen de error. Cuando menor sea el margen de error, más cerca estarán los resultados de la muestra a los que hubieran surgido si hubieras consultado a toda la población. 
+
+    Nivel de confianza
+    Muestra tu grado de confianza en los resultados de la encuesta. Por ejemplo, un grado de confianza del 95% significa que si realizaras la misma encuesta 100 veces, obtendrías los mismos resultados 95 veces de esas 100. El nivel de confianza se especifica antes de que comiences tu estudio porque afectará qué tan grande será tu margen de error al finalizar tu estudio. 
+
+    Intervalo de confianza
+    El rango de valores posibles del resultado de la población respecto del nivel de confianza del estudio. Este rango es el resultado de la muestra +/- el margen de error.
+
+    Significancia estadística
+    La determinación sobre la posibilidad de que tu resultado pueda estar basado en posibilidades aleatorias. A mayor significancia, la posibilidad es menor.
+
+### Sample Size / Tamaño de muestra
+
+    A part of a population that is representative of the population.
+
+Al planificar el tamaño de una muestra, hay algunos puntos para tener en cuenta:
+
+  - No utilizar muestras menores de 30. Está probado estadísticamente que 30 es el tamaño mínimo de muestra a partir del cual el resultado promedio de la muestra comienza a representar el resultado promedio de la población.
+
+  - El nivel de confianza comúnmente utilizado es 95%, pero 90% puede funcionar en algunos casos. 
+
+Aumentar el tamaño de la muestra para cumplir con ciertas necesidades del proyecto:
+
+  - Para un mayor nivel de confianza, utilizar un tamaño de muestra más grande
+
+  - Para disminuir el margen de error, utilizar un tamaño de muestra más grande
+
+  - Para una mayor significancia estadística, utilizar un tamaño de muestra más grande
+
+> Nota: Las calculadoras de tamaños de las muestras utilizan fórmulas estadísticas para determinar el tamaño de una muestra
+
+### Muestra mínima de 30
+
+Esta recomendación está basada en el Teorema del límite central (TLC) del campo de probabilidades y estadísticas. A medida que aumenta el tamaño de la muestra, los resultados se asemejan más a la distribución normal (en forma de campana) de una gran cantidad de muestras. El mínimo de la muestra es 30 para que el teorema TLC sea válido. Los investigadores que se basan en el análisis de regresión (métodos estadísticos para determinar las relaciones entre variables controladas y dependientes) también prefieren un mínimo de muestra de 30.
+
+### Determinar el tamaño de la muestra
+
+Para usar una calculadora de tamaño de muestras, necesitas conocer el tamaño de la población, el nivel de confianza y el margen de error aceptable que se definió para poder ingresar esa información en la herramienta.
+
+Considerando el siguiente ejemplo:
+
+    Population Size: 500
+    Confidence level: 95%
+    Margin of error: 5%
+
+--- 
+
+*Herramienta en Hoja de Cálculo*
+
+Se puede calcular el tamaño de la muestra utilizando una hoja de cálculo o alguna herramienta en internet.
+
+[Hoja de calculo ->](../storage/Sample%20Size%20Calculator.xlsx)
+
+![](../img/sample_size_calculator.png)
+
+
+*Herramienta Online*
+
+[- Calculadora de tamaño de muestras de surveymonkey.com](https://www.surveymonkey.com/mp/sample-size-calculator/)
+
+[- Calculadora de tamaño de muestras de raosoft.com](http://www.raosoft.com/samplesize.html)
+ 
+> Después de que hayas cargado la información en alguna de estas calculadoras, aparecerá el tamaño de muestra sugerido. Recuerda que el tamaño de muestra calculado es el número mínimo que debes utilizar para alcanzar lo que cargaste como nivel de confianza y margen de error esperado. Si estás trabajando con una encuesta, también deberás pensar cuál es la tasa de respuesta estimada para definir cuántas encuestas necesitas enviar. Por ejemplo, si necesitas un tamaño de muestra de 100 personas y tu tasa de respuesta estimada es del 10%, necesitarás enviar tu encuesta a 1,000 personas para alcanzar las 100 respuestas que necesitas para tu análisis. 
+
+
+## Margin of error
+
+The maximum amount that the sample results are expected to differ from those of the actual population.
+
+### Calcular Margen de Error
+
+Todo lo que necesitas es el tamaño de la población, el nivel de confianza y el tamaño de la muestra. 
+
+- Population Size
+- Sample Size
+- Confidence level
+
+Considerando el siguiente ejemplo:
+
+    Sample size: 500
+    Population: 80,000,000
+    Confidence level: 99%
+
+---
+
+*Herramienta en Hoja de Cálculo*
+
+[Hoja de calculo ->](../storage/Margin%20of%20Error%20Calculator.xlsx)
+
+![](../img/margin_of_error_calculator.png)
+
+*Herramienta Online*
+
+[- Calculadora de margen de error de Good Calculators (calculadoras en línea gratuitas)](https://goodcalculators.com/margin-of-error-calculator/)
+
+[- Calculadora de margen de error de CheckMarket](https://www.checkmarket.com/sample-size-calculator/#sample-size-margin-of-error-calculator)
