@@ -175,3 +175,24 @@ Considerando el siguiente ejemplo:
 [- Calculadora de margen de error de Good Calculators (calculadoras en línea gratuitas)](https://goodcalculators.com/margin-of-error-calculator/)
 
 [- Calculadora de margen de error de CheckMarket](https://www.checkmarket.com/sample-size-calculator/#sample-size-margin-of-error-calculator)
+
+
+---
+
+## Data Validation
+  A tool for checking acurracy and quality of data before adding or importing it.
+
+### Herramientas
+
+Desde la herramienta de hojas de cálculo se puede empezar a limpiar:
+
+  - Valores duplicados
+  - Valores nulos
+  - Errores de Tipeado
+  - Errores de formato
+  - Capitalizacion Inconsistente
+  - Espacios en blanco innecesarios
+
+- [`Las diez mejores formas de limpiar tus datos:`](https://support.microsoft.com/en-us/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19)
+
+- [`10 consejos de Google Workspace para limpiar datos: `](https://support.google.com/a/users/answer/9604139?hl=en#zippy=)

@@ -1,13 +1,12 @@
 
 # Data Analytics
 
-## Data Analysis
-
-### What is?
+## What is?
 The collection, transformation and organization of data in order to make predictions, draw conclusions
 
 
-### Why is important
+### `Data Analyst`
+    Answer pre-established questions using data sources
 
 1. Improve processes
 2. Identify opportunities and trends
@@ -15,15 +14,31 @@ The collection, transformation and organization of data in order to make predict
 4. Serve costumers
 5. Make thoughtful decisions
 
-## Data Science
+### `Data Science`
+    Modeling and understanding the unknown by using raw data
+
 1. Machine learning
 2. Statistics
 3. Analytics
 
-## 1. Data Scientist
-    Modeling and understanding the unknown by using raw data
-## 2. Data Analyst
-    Answer pre-established questions using data sources
+
+### `Data Engineers`
+    Transform data into a useful format for analysis and give it a reliable infrastructure.
+
+Procesadores de datos, bases de datos, Sistemas relacionados: 
+
+1. Mantienen
+2. Desarrollan
+3. Testean 
+
+### `Data warehousing specialists`
+    Develop processes and procedures to effectively store and organize data.
+
+Se aseguran que los datos:
+
+1. Esten disponibles
+2. Seguros
+3. Existan copias de seguridad
 
 ---
 
