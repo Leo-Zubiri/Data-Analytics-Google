@@ -186,13 +186,58 @@ Considerando el siguiente ejemplo:
 
 Desde la herramienta de hojas de cálculo se puede empezar a limpiar:
 
-  - Valores duplicados
-  - Valores nulos
-  - Errores de Tipeado
-  - Errores de formato
-  - Capitalizacion Inconsistente
-  - Espacios en blanco innecesarios
+    - Valores duplicados
+    - Valores nulos
+    - Errores de Tipeado
+    - Errores de formato
+    - Capitalizacion Inconsistente
+    - Espacios en blanco innecesarios
+
 
 - [`Las diez mejores formas de limpiar tus datos:`](https://support.microsoft.com/en-us/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19)
 
 - [`10 consejos de Google Workspace para limpiar datos: `](https://support.google.com/a/users/answer/9604139?hl=en#zippy=)
+
+### Pasos
+
+`Quitar filas que les faltan datos`
+1. Seleccionar las columnas a aplicar filtro
+2. Click en datos/crear un filtro
+3. Por cada columna ir aplicando una a la vez Filter by condition / is Empty
+4. Eliminar las filas correspondientes
+
+<br/>  
+
+`Transponer datos`
+
+En algunos casos se necesita transponer los datos para su procesamiento:
+
+1. Seleccionar y copiar todo el rango
+2. Sobre la celda que se desea empezar click derecho/pegado especial/transponer
+
+![](../img/transponer1.png)
+
+Transpose:
+
+![](../img/transponer2.png)
+
+<br/>
+
+`Quitar espacios extra`
+
+1. Seleccionar el rango de datos
+2. Pestaña datos/Borrado de datos/Recortar espacios en blanco
+
+![](../img/limpieza%20espacios.png)
+
+
+<br/>
+
+`Formato de Mayúscula/Minúscula/tamaño apropiado del texto`
+
+Para el Google sheets
+
+1. Haz clic en la opción Complementos, en la parte superior de Google Sheets.
+2. Haz clic en Obtener complementos.
+3. Busca Cambiar mayúsculas y minúsculas/ChangeCase.  
+4. Seleccionar rango y acceder a las opciones de la extension.
