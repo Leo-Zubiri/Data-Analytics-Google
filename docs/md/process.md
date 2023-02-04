@@ -241,3 +241,19 @@ Para el Google sheets
 2. Haz clic en Obtener complementos.
 3. Busca Cambiar mayúsculas y minúsculas/ChangeCase.  
 4. Seleccionar rango y acceder a las opciones de la extension.
+
+`VLOOKUP`
+
+Vertical Lookup. Function that searches for a certain value in a column to return a corresponding piece of information.
+
+### Data Mapping
+
+The process of matching fields from one data source to another
+
+### Schema
+
+A way of describing how something is organized
+
+---
+
+## Clean Data With SQL
