@@ -257,3 +257,114 @@ A way of describing how something is organized
 ---
 
 ## Clean Data With SQL
+
+SQL = Structured Query Language
+
+![](../img/data_medicion.png)
+
+### SENTENCES
+
+DISTINCT - Remove duplicate data
+
+```sql
+SELECT 
+  DISTINCT user_id
+FROM 
+  table_name
+```
+
+LENGTH
+
+```sql
+SELECT 
+  LENGTH(column_with_String) AS number_of_letters
+FROM 
+  table_name
+```
+
+SUBSTR
+
+```sql
+SELECT 
+  SUBSTR(column_with_String,1,2) 
+FROM 
+  table_name
+```
+
+TRIM - Delete extra spaces
+
+```sql
+SELECT 
+  TRIM(column_with_String) 
+FROM 
+  table_name
+```
+
+MAX-MIN VALUE
+
+```sql
+SELECT 
+  MIN(numeric_field) AS min_length, 
+  MAX(numeric_field) AS max_length 
+FROM `formulas-proyecto.cars.car_info` 
+```
+
+UPDATE
+
+```sql
+UPDATE cars.car_info 
+SET num_of_doors = "four" 
+WHERE make = "dodge" 
+  AND fuel_type = "gas" 
+  AND body_style = "sedan";
+```
+
+COUNT
+
+```SQL
+SELECT
+
+COUNT(*) AS num_of_rows_to_delete
+
+FROM
+
+cars.car_info
+
+WHERE
+
+compression_ratio = 70;
+```
+
+CAST - Convert one data type to another
+
+```sql
+SELECT
+  CAST(fieldName AS FLOAT64)
+FROM
+  tableName
+ORDER BY
+  CAST(fieldName AS FLOAT64) DESC 
+```
+
+CONCAT
+
+```SQL
+SELECT 
+  CONCAT(col1,col2) as new_column
+FROM
+  tableName
+
+```
+
+COALESCE - return non-null values in a result
+
+```sql
+SELECT
+  COALESCE(product,product_code)
+FROM
+  tableName
+```
+
+## Verification
+
+A procces to confirm that a data-cleaning effort was well-executed
