@@ -365,6 +365,59 @@ FROM
   tableName
 ```
 
+CASE
+
+```SQL
+SELECT
+  user_id,
+  CASE 
+    WHEN first_name = 'Tnoy' THEN 'Tony'
+    ELSE first_name
+    END AS cleaned_name
+FROM
+  tableName
+```
+
 ## Verification
 
 A procces to confirm that a data-cleaning effort was well-executed
+
+See the big picture when verifying data-cleaning:
+
+1. Consider the business problem
+2. Consider the goal
+3. Consider the data
+
+### Changelog
+
+A file containing a chronologically ordered list of modifications made to a project
+
+---
+
+## Corregir los problemas más comunes
+
+Asegúrate de haber identificado y corregido los problemas más comunes, que incluyen:
+
+    Fuentes de errores: ¿Utilizaste las herramientas y las funciones correctas para encontrar la fuente de los errores en tu conjunto de datos?
+
+    Datos nulos: ¿Buscaste DATOS NULOS utilizando el formato condicional y los filtros?
+
+    Palabras mal escritas: ¿Localizaste todas las palabras mal escritas?
+
+    Números mal escritos: ¿Revisaste dos veces que tus datos numéricos hayan sido ingresados correctamente?
+
+    Espacios y caracteres extra: ¿Eliminaste los espacios y caracteres extra utilizando la función TRIM?
+
+    Duplicados: ¿Eliminaste los duplicados en las hojas de cálculo utilizando la función Quitar duplicados o DISTINCT en SQL?
+
+    Error de coincidencia de tipos de datos: ¿Revisaste que los datos numéricos, las fechas y las cadenas de datos tengan el tipo correcto?
+
+    Cadenas desordenadas (incoherentes): ¿Te aseguraste de que todas tus cadenas sean coherentes y significativas?
+
+    Formatos de fecha desordenados (incoherentes): ¿Diste formato a las fechas de forma uniforme en todo el conjunto de datos?
+
+    Etiquetas engañosas de variables (columnas): ¿Asignaste nombres significativos a tus columnas?
+
+    Datos truncados: ¿Comprobaste si había datos truncados o faltantes que debieran ser corregidos?
+
+    Lógica de negocios: ¿Comprobaste si los datos tienen sentido dados tus conocimientos del negocio
