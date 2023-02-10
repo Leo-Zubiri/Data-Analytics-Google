@@ -421,3 +421,9 @@ Asegúrate de haber identificado y corregido los problemas más comunes, que inc
     Datos truncados: ¿Comprobaste si había datos truncados o faltantes que debieran ser corregidos?
 
     Lógica de negocios: ¿Comprobaste si los datos tienen sentido dados tus conocimientos del negocio
+
+---
+
+## Funciones avanzadas limpieza de datos
+
+![](../img/funciones_spreadsheets.png)
