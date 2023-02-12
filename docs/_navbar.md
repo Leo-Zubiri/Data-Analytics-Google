@@ -10,6 +10,6 @@
   * [Ask          ](md/ask.md)
   * [Prepare      ](md/prepare.md)
   * [Process      ](md/process.md)
-  * [Analyze      ](md/ask.md)
+  * [Analyze      ](md/analyze.md)
   * [Share        ](md/ask.md)
   * [Act          ](md/ask.md)
