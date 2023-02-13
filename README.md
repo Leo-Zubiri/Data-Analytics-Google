@@ -131,9 +131,17 @@ Edit index.html file and set next code respectively:
 
 As default it's only compatible with CSS, JS and HTML. To set adittionals:
 
+[`More languages ->`](https://cdn.jsdelivr.net/npm/prismjs@1/components/)
+
 ```html
-<script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
-<script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
+<!-- Highlight languages -->
+  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-css.min.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-javascript.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-json.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-jsx.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-python.js"></script>
 ```
 
 ## Pagination
