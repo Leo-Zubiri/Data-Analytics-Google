@@ -84,3 +84,29 @@ Allows you to control what can and can't be entered in your worksheet.
 ![](../img/data_validation_dropdown.png)
 
 ![](../img/data_validation_checkbox.png)
+
+## Aggregation
+
+Collectingor gathering many separate pieces into a whole.
+
+### Data Aggregation
+
+The process of gathering data from multiple sources in order to combine it into a single summarized collection.
+
+## JOIN SQL
+
+A SQL clause that is used to combine rows from two or more tables based on a related column
+
+`Common JOINs`
+
+- INNER
+- LEFT
+- RIGHT
+- OUTER
+
+![](../img/JOINS.png)
+
+
+INNER JOIN
+
+INNER es opcional en esta consulta SQL porque es la opción predeterminada, así como la operación de JOIN más usada. Puedes verlo como JOIN a secas. INNER JOIN devuelve registros si los datos están dentro de ambas tablas. Por ejemplo, si usas INNER JOIN para las tablas de 'customers' y 'orders' y asocias los datos usando la clave customer_id, combinarás los datos de cada customer_id que existen en ambas tablas. Si una customer_id existe en la tabla de clientes, pero no en la tabla de pedidos, los datos de esa customer_id no se asocian ni son devueltos por la consulta
