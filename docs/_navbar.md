@@ -11,5 +11,5 @@
   * [Prepare      ](md/prepare.md)
   * [Process      ](md/process.md)
   * [Analyze      ](md/analyze.md)
-  * [Share        ](md/ask.md)
+  * [Share        ](md/share.md)
   * [Act          ](md/ask.md)

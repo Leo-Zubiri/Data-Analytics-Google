@@ -85,6 +85,66 @@ Allows you to control what can and can't be entered in your worksheet.
 
 ![](../img/data_validation_checkbox.png)
 
+## Data Validation Process
+
+Checking and rechecking the quality of your data so that it is complete,accurate,secure and consistent
+
+## Tipos de validación de datos
+
+Los primeros cinco son tipos de validación asociados con los datos (tipo, rango, limitación, coherencia y estructura) y el sexto tipo se centra en la validación del código de aplicación que se utiliza para aceptar los datos a partir del aporte del usuario. 
+
+Como analista de datos junior, es posible que no tengas que realizar todas estas validaciones. Pero podrías consultar si los datos se validaron y de qué manera antes de comenzar a trabajar con un conjunto de datos. La validación de datos ayuda a garantizar la integridad de los datos. Además, te proporciona confianza en cuanto a que los datos que estás utilizando están limpios. La siguiente lista describe los seis tipos de validación de datos y el propósito de cada uno e incluye ejemplos y limitaciones.
+
+### 1. Tipos de datos 
+
+    Propósito: Comprobar que los datos coincidan con el tipo de datos definido para un campo.
+
+    Ejemplo: Los valores de los datos para los grados escolares de 1 a 12 deben ser del tipo de datos numéricos.
+
+    Limitaciones: El valor de datos 13 pasaría la validación del tipo de datos pero sería un valor inaceptable. En este caso, la validación del rango de datos también es necesaria.
+
+### 2. Rango de datos
+
+    Propósito: Comprobar que los datos se ubiquen dentro de un rango de valores aceptable definido por el campo.
+
+    Ejemplo: Los valores de datos para los grados escolares deben ser valores entre 1 y 12.
+
+    Limitaciones: El valor de datos 11.5 estaría dentro del rango de datos y también sería aceptable como un tipo de dato numérico. Sin embargo, no sería aceptable porque no existen medios grados. En este caso, la validación de la limitación de datos también es necesaria.
+
+### 3. Limitaciones de datos
+
+    Propósito: Comprobar que los datos cumplan con ciertas condiciones o criterios para un campo. Esto incluye el tipo de datos ingresados además de otros atributos del campo como, por ejemplo, el número de caracteres.
+
+    Ejemplo: Restricción del contenido: Los valores de los datos para los grados escolares de 1 a 12 deben ser números enteros.
+
+    Limitaciones: El valor de datos 13 es un número entero y pasaría la validación de restricción de contenido. Sin embargo, no sería aceptable dado que 13 no es un grado escolar reconocido. En este caso, la validación del rango de datos también es necesaria.
+
+### 4. Coherencia de los datos
+
+    Propósito: Comprobar que los datos tienen sentido en el contexto de otros datos relacionados.
+
+    Ejemplo: Los valores de los datos para las fechas de envío del producto no pueden ser anteriores a las fechas de producción del producto.
+
+    Limitaciones: Los datos podrían ser coherentes pero son incorrectos o poco precisos. Una fecha de envío podría ser posterior a una fecha de producción y aun así ser incorrecta.
+
+### 5. Estructura de los datos
+
+    Propósito: Comprobar que los datos siguen o se ajustan a una estructura establecida.
+
+    Ejemplo: Las páginas web deben seguir una estructura prescrita para que se muestren adecuadamente.
+
+    Limitaciones: Una estructura de datos podría ser correcta siendo los datos incorrectos o poco precisos. El contenido de una página web podría mostrarse adecuadamente y aun así contener información incorrecta.
+
+### 6. Validación del código
+
+    Propósito: Comprobar que el código de aplicación realice sistemáticamente cualquiera de las validaciones antes mencionadas durante el ingreso de datos del usuario.
+
+    Ejemplo: Los siguientes son problemas comunes que se descubren durante la validación del código: más de un tipo de datos permitido, comprobación del rango de datos no realizada o finalización de cadenas de texto que no están bien definidas.
+
+    Limitaciones: La validación del código podría no validar todas las posibles variaciones con el ingreso de datos. 
+
+---
+
 ## Aggregation
 
 Collectingor gathering many separate pieces into a whole.
@@ -125,3 +185,141 @@ Quizás te aparezca como RIGHT OUTER JOIN o RIGHT JOIN. RIGHT JOIN devuelve todo
 `FULL OUTER JOIN`
 
 Quizás a veces te aparezca como FULL JOIN. FULL OUTER JOIN devuelve todos los registros de las tablas especificadas. Puedes combinar las tablas de esta manera, pero recuerda que como resultado puede ser potencialmente una gran extracción de datos. FULL OUTER JOIN devuelve todos los registros de ambas tablas aun si los datos no se rellenaron en una de las tablas. 
+
+--- 
+
+¿Cuál es la cantidad promedio de dinero gastado por región en educación?
+
+```sql
+SELECT  AVG(edu.value) average_value, summary.region
+FROM  `bigquery-public-data.world_bank_intl_education.international_education` AS edu
+INNER JOIN  `bigquery-public-data.world_bank_intl_education.country_summary` AS summary
+ON edu.country_code = summary.country_code
+WHERE summary.region IS NOT null
+GROUP BY summary.region
+ORDER BY average_value DESC  
+```
+
+---
+
+## COUNT 
+
+### in spreadsheets
+
+Can be used to count the total number of numerical values within a specific range in spreadsheets
+
+### in SQL
+
+A query that returns the number of rows in a specified range
+
+## COUNT DISTINCT
+
+A query that only returns the distinct values in a specified range.
+
+---
+
+## SUBQUERIES
+
+A SQL query that is nested inside a larger query
+
+Existen algunas reglas que deben seguir las subconsultas:
+
+    Las subconsultas tienen que estar dentro de paréntesis
+
+    Una subconsulta puede tener una sola columna especificada en la cláusula SELECT. Si quieres que una subconsulta compare varias columnas, esas columnas deben haberse seleccionado en la consulta principal.
+
+    Las subconsultas que devuelven más de una fila solo pueden usarse con múltiples operadores de valor, tales como el operador IN que permite especificar múltiples valores en una cláusula WHERE.
+
+    Una subconsulta no puede estar anidada en un comando SET. El comando SET se usa con UPDATE para especificar qué columnas (y valores) se deben actualizar en una tabla.
+
+### Having
+
+Allows you to add a filter to your query instead of the underlying table that can only be used with aggregate functions
+
+## Extract command
+
+Lets us pull one part of a given date to use
+
+```sql
+SELECT
+  EXTRACT(YEAR FROM startime) AS year,
+  COUNT(*) AS number_of_items,
+FROM 
+  Ttable
+GROUP BY
+  year
+ORDER BY 
+  year
+```
+
+---
+
+## Temporary Table
+
+A database table that is created and exists temporarily on a database server.
+
+### WITH
+
+The WITH clause is a type of temporary table that you can query from multiple times
+
+```sql
+WITH table_temp AS (
+  SELECT * FROM _table
+)
+
+## Temporary table
+```
+
+```sql
+WITH 
+  longest_used_bike AS (
+    SELECT 
+        bikeid,
+        SUM(duration_minutes) AS trip_duration
+    FROM
+        bigquery-public-data.austin_bikeshare.bikeshare_trips
+    GROUP BY
+      bikeid
+    ORDER BY
+      trip_duration DESC
+    LIMIT 1
+  )
+
+## FIND STATION AT WHICH LONGEST BIKESHARE RIDE STARTED
+
+SELECT
+  trips.start_station_id,
+  COUNT(*) AS trip_ct
+FROM
+  longest_used_bike AS longest
+INNER JOIN  
+  `bigquery-public-data.austin_bikeshare.bikeshare_trips` AS trips
+ON longest.bikeid = trips.bikeid
+GROUP BY
+  trips.start_station_id
+ORDER BY
+  trip_ct DESC
+LIMIT 1
+```
+
+## SELECT INTO
+
+> BigQuery no admite el siguiente método, pero la mayoría de las demás versiones de las bases de datos de SQL lo admiten, incluido SQL Server y mySQL.
+
+```sql
+SELECT *
+INTO AfricaSales 
+FROM GlobalSales 
+WHERE Region = "Africa"
+```
+
+
+## CREATE TABLE AS
+
+```sql
+CREATE tableName AS (  
+  SELECT *
+  FROM GlobalSales 
+  WHERE Region = "Africa"
+)
+```
